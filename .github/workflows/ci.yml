@@ -21,7 +21,7 @@ jobs:
         java-version: '21.0.4'
 
     - name: Compile Java
-      run: javac App.java
+      run: javac -d out App.java
 
     - name: Run Java
-      run: java -cp App
+      run: java -cp out App
